@@ -48,7 +48,7 @@
                     cost = 1;
                 
                 // Step 6
-                d[ j * n + i ] = smallestOfThree(d [ (j - 1) * n + i ] + 1, d[ j * n + i - 1 ] +  1, d[ (j - 1) * n + i - 1 ] + cost );
+                d[ j * n + i ] = MIN(MIN(d [ (j - 1) * n + i ] + 1, d[ j * n + i - 1 ] +  1), d[ (j - 1) * n + i - 1 ] + cost);
                 
                 // This conditional adds Damerau transposition to Levenshtein distance
                 if( i>1 && j>1 && [originalString characterAtIndex: i-1] ==
@@ -68,20 +68,5 @@
     }
     return 0.0;
 }
-
-// Return the minimum of a, b and c - used by compareString:withString:
-
-NSInteger smallestOfThree(NSInteger a, NSInteger b, NSInteger c)
-{
-    NSInteger min = a;
-    if ( b < min )
-        min = b;
-    
-    if( c < min )
-        min = c;
-    
-    return min;
-}
-
 
 @end
