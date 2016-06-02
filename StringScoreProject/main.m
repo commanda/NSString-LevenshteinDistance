@@ -23,6 +23,8 @@ void runLevenshteinDistance()
     NSString *rainbowUnicorn = @"🌈🦄";
     NSString *hangul = @"한글";
     NSString *chakul = @"자글";
+    NSString *tamil = @"௵";
+    NSString *tamil2 = @"௵௵";
     
     
     print(s1, s1);
@@ -30,6 +32,8 @@ void runLevenshteinDistance()
     print(s2, s1);
     print(rainbow, rainbowUnicorn);
     print(hangul, chakul);
+    print(tamil, tamil2);
+    
 }
 
 int main(int argc, const char * argv[]) {
