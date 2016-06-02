@@ -25,6 +25,7 @@ void runLevenshteinDistance()
     NSString *chakul = @"자글";
     NSString *tamil = @"௵";
     NSString *tamil2 = @"௵௵";
+    NSString *empty = @"";
     
     
     print(s1, s1);
@@ -33,6 +34,7 @@ void runLevenshteinDistance()
     print(rainbow, rainbowUnicorn);
     print(hangul, chakul);
     print(tamil, tamil2);
+    print(s1, empty);
     
 }
 
