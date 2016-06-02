@@ -12,7 +12,7 @@
 
 -(float)levenshteinDistanceFromString:(NSString *)comparisonString
 {
-    // Normalize strings
+    // Remove whitespace from both strings
     NSString *originalString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     comparisonString = [comparisonString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
