@@ -11,8 +11,8 @@
 
 void print(NSString *s1, NSString *s2)
 {
-    float v = [s1 levenshteinDistanceFromString:s2];
-    NSLog(@"%f\n%@\n%@", v, s1, s2);
+    NSInteger v = [s1 levenshteinDistanceFromString:s2];
+    NSLog(@"%ld\n%@\n%@", v, s1, s2);
 }
 
 void runLevenshteinDistance()

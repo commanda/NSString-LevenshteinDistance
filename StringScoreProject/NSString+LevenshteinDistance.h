@@ -10,6 +10,6 @@
 
 @interface NSString (LevenshteinDistance)
 
--(float)levenshteinDistanceFromString:(NSString *)comparisonString;
+- (NSInteger)levenshteinDistanceFromString:(NSString *)comparisonString;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSString (LevenshteinDistance)
 
--(float)levenshteinDistanceFromString:(NSString *)comparisonString
+- (NSInteger)levenshteinDistanceFromString:(NSString *)comparisonString
 {
     // Remove whitespace from both strings
     NSString *originalString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -66,7 +66,7 @@
         
         return distance;
     }
-    return 0.0;
+    return 0;
 }
 
 @end
