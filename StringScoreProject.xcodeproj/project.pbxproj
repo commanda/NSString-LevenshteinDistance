@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		378107B31D00918200776523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378107B21D00918200776523 /* main.m */; };
 		378107BB1D0091D500776523 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 378107B91D0091D500776523 /* NSString+Score.m */; };
+		378107C11D00951200776523 /* NSString+LevenshteinDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 378107C01D00951200776523 /* NSString+LevenshteinDistance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		378107B21D00918200776523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		378107B91D0091D500776523 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
 		378107BA1D0091D500776523 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
+		378107BF1D00951200776523 /* NSString+LevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LevenshteinDistance.h"; sourceTree = "<group>"; };
+		378107C01D00951200776523 /* NSString+LevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LevenshteinDistance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,10 @@
 		378107B11D00918200776523 /* StringScoreProject */ = {
 			isa = PBXGroup;
 			children = (
-				378107B91D0091D500776523 /* NSString+Score.m */,
 				378107BA1D0091D500776523 /* NSString+Score.h */,
+				378107B91D0091D500776523 /* NSString+Score.m */,
+				378107BF1D00951200776523 /* NSString+LevenshteinDistance.h */,
+				378107C01D00951200776523 /* NSString+LevenshteinDistance.m */,
 				378107B21D00918200776523 /* main.m */,
 			);
 			path = StringScoreProject;
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378107C11D00951200776523 /* NSString+LevenshteinDistance.m in Sources */,
 				378107BB1D0091D500776523 /* NSString+Score.m in Sources */,
 				378107B31D00918200776523 /* main.m in Sources */,
 			);
@@ -245,6 +251,7 @@
 				378107B81D00918200776523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
